@@ -8,13 +8,19 @@ function agregarAmigo() {
     let dato = document.getElementById ("amigo"). value;
     if (dato == 0) alert ("ingrese dato valido");
     else {amigo.push(dato)}
-
+limpiarCaja();
     console.log(amigo);
     console.log(dato);
  
   
 }
-    
+    function limpiarCaja() {
+      let limpiarCaja = document.getElementById ("amigo");
+      limpiarCaja.value ="";
+
+
+      
+    }
 
     
 
